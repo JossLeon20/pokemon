@@ -1,0 +1,12 @@
+.containerPrincipal {
+  position: "absolute";
+  left: 50;
+  top: 50;
+  border: 1;
+  padding: 40;
+  background-color: "white";
+}
+
+.containerSecundario {
+  text-align: "center";
+}

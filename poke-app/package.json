@@ -1,0 +1,39 @@
+{
+  "name": "poke-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/md5": "^2.3.2",
+    "axios": "^1.2.4",
+    "bootstrap": "^5.2.3",
+    "json-server": "^0.17.1",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.57.1",
+    "universal-cookie": "^4.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "json-server --watch db.json --port 3001",
+    "run-All": "npm-run-all -p -r start server",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
