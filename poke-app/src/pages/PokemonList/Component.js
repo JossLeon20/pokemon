@@ -41,7 +41,7 @@ const PokemonList = () => {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.cardsGrid} key={pokemon.id}>
         {pokemon.map((pokemon, _) => (
           <div
@@ -65,7 +65,7 @@ const PokemonList = () => {
         ))}
       </div>
       <br />
-    </>
+    </div>
   );
 };
 

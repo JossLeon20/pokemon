@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 import { useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie"
 import Button from 'react-bootstrap/Button'
-
 import styles from "./Styles.module.css";
 
 const cookies = new Cookies()
@@ -32,14 +31,16 @@ const Header = () => {
 
     return (
         <>
-            <Button onClick={home} type="button" className="btn btn-primary">Home</Button>
-           <h1 className={styles.title}>
+            <h1 className={styles.title}>
                 Welcome {cookies.get('nombre')}
             </h1>
             <h3 className={styles.title}>
                 Take a look to our available Pokemons
             </h3>
-            <Button onClick={logOut} type="button" className="btn btn-primary">Log out</Button>
+            <div className={styles.buttons}>
+                <Button style={{marginRight:'10px'}} onClick={home} type="button" className="btn btn-primary">Home</Button>
+                <Button onClick={logOut} type="button" className="btn btn-primary">Log out</Button>
+            </div>
             <br/> 
         </>
     )

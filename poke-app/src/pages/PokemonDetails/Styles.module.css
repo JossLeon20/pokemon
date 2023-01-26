@@ -1,18 +1,24 @@
 .title {
     font-weight: bold;
     text-align: center;
+    margin-top: 15px;
 }
-.cardsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    background-color: aqua;
+.detailsContainer {
+    margin-top: 30px;
+    text-align: 'initial';
 }
-.cardContainer {
-    width: '12rem';
-    text-align: '-webkit-center';
-    justify-self: center;
-    box-shadow: 0 1px 2px rgb(0 0 0/25%);
-    border-radius: 10px;
+.imageContainer {
+ width: 200px;
+}
+.generalContainer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.detailsButtonContainer {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
 }
  

@@ -33,13 +33,25 @@ const PokemonList = () => {
 
   return (
     <>
-      <div className={styles.cardsGrid} key={pokemon.id}>
-        <h2>{`Number: ${pokemonDetails.order}`}</h2>
-        <h2>{`Name: ${pokemonDetails.name}`}</h2>
-        <h2>{`Height: ${pokemonDetails.height}`}</h2>
-        <h2>{`Weight: ${pokemonDetails.weight}`}</h2>
-        <Card.Img variant="top" src={pokemonDetails?.sprites?.front_default} />
-      </div>
+    <div className={styles.generalContainer}>
+      <Card>
+        <div key={pokemon.id}>
+          <h1 className={styles.title}>Details</h1>
+          <div className={styles.detailsButtonContainer}>
+            <div className={styles.detailsContainer}>
+              <h4>{`Number: ${pokemonDetails.order}`}</h4>
+              <h4>{`Name: ${pokemonDetails.name}`}</h4>
+              <h4>{`Height: ${pokemonDetails.height}`}</h4>
+              <h4>{`Weight: ${pokemonDetails.weight}`}</h4>
+            </div>
+          <div className={styles.imageContainer}>
+            <Card.Img variant="top" src={pokemonDetails?.sprites?.front_default} />
+          </div>
+          </div>
+        </div>
+      </Card>
+    </div>
+      
     </>
   );
 };
